@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  MyWallet
+
+  Created by Vitor Scheffer on 08/07/24.
+  
+*/
+
+"MWapp.name" = "MyWallet";
+"MWok" = "Ok";
+"MWsaved" = "Saved";
+"MWremoved" = "Removed";
+"MWsecret.key" = "&token=%@";
+
+"MWtab.bar.home" = "Home";
+"MWtab.bar.search" = "Search";
+"MWtab.bar.saved" = "Saved Stocks";
+
+"MWerror.title" = "Oh! Something went wrong!";
+"MWerror.message" = "Don't worry! We're already trying to solve this mistake, try again later";
+
+"MWlogger.succeeded" = "\n ***** 🟢 SUCCEEDED: 🌐 URL: %@ 🌐 *****";
+"MWlogger.failed" = "\n ***** 🔴 FAILED: 🌐 URL: %@ 🌐 *****";

@@ -18,6 +18,13 @@
 		7198637E2C3C49710081BEED /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198637D2C3C49710081BEED /* HomeView.swift */; };
 		719863852C3C4C210081BEED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719863842C3C4C210081BEED /* AppDelegate.swift */; };
 		719863872C3C4C2F0081BEED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719863862C3C4C2F0081BEED /* SceneDelegate.swift */; };
+		7198638B2C3C74B70081BEED /* MyWalletBaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198638A2C3C74B70081BEED /* MyWalletBaseURL.swift */; };
+		7198638D2C3C78310081BEED /* QuotesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198638C2C3C78310081BEED /* QuotesRepository.swift */; };
+		719863902C3C789E0081BEED /* CoreApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198638F2C3C789E0081BEED /* CoreApi.swift */; };
+		719863922C3C78FD0081BEED /* CoreApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719863912C3C78FD0081BEED /* CoreApiProtocol.swift */; };
+		719863942C3C794D0081BEED /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719863932C3C794D0081BEED /* StringExtension.swift */; };
+		719863962C3C7A860081BEED /* MWLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719863952C3C7A860081BEED /* MWLogger.swift */; };
+		7198639A2C3C7D1A0081BEED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 719863982C3C7D1A0081BEED /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,13 @@
 		7198637D2C3C49710081BEED /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		719863842C3C4C210081BEED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		719863862C3C4C2F0081BEED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7198638A2C3C74B70081BEED /* MyWalletBaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWalletBaseURL.swift; sourceTree = "<group>"; };
+		7198638C2C3C78310081BEED /* QuotesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesRepository.swift; sourceTree = "<group>"; };
+		7198638F2C3C789E0081BEED /* CoreApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreApi.swift; sourceTree = "<group>"; };
+		719863912C3C78FD0081BEED /* CoreApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreApiProtocol.swift; sourceTree = "<group>"; };
+		719863932C3C794D0081BEED /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		719863952C3C7A860081BEED /* MWLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MWLogger.swift; sourceTree = "<group>"; };
+		719863992C3C7D1A0081BEED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +116,7 @@
 		719863472C3C47920081BEED /* MyWallet */ = {
 			isa = PBXGroup;
 			children = (
+				719863972C3C7D000081BEED /* Resources */,
 				7198637F2C3C4A690081BEED /* Data */,
 				719863792C3C492A0081BEED /* Presentation */,
 				719863762C3C48E60081BEED /* Utils */,
@@ -136,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				719863742C3C48CC0081BEED /* BindingExtension.swift */,
+				719863932C3C794D0081BEED /* StringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -145,6 +161,7 @@
 			children = (
 				719863732C3C487B0081BEED /* Extensions */,
 				719863772C3C49030081BEED /* I18n.swift */,
+				719863952C3C7A860081BEED /* MWLogger.swift */,
 			);
 			name = Utils;
 			path = "New Group";
@@ -170,9 +187,10 @@
 		7198637F2C3C4A690081BEED /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				7198638E2C3C78930081BEED /* Core */,
 				719863832C3C4BD80081BEED /* Model */,
-				719863822C3C4BB60081BEED /* Services */,
 				719863812C3C4BAD0081BEED /* Repositories */,
+				7198638A2C3C74B70081BEED /* MyWalletBaseURL.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -180,15 +198,9 @@
 		719863812C3C4BAD0081BEED /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				7198638C2C3C78310081BEED /* QuotesRepository.swift */,
 			);
 			path = Repositories;
-			sourceTree = "<group>";
-		};
-		719863822C3C4BB60081BEED /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		719863832C3C4BD80081BEED /* Model */ = {
@@ -196,6 +208,23 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7198638E2C3C78930081BEED /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7198638F2C3C789E0081BEED /* CoreApi.swift */,
+				719863912C3C78FD0081BEED /* CoreApiProtocol.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		719863972C3C7D000081BEED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				719863982C3C7D1A0081BEED /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				719863512C3C479F0081BEED /* Preview Assets.xcassets in Resources */,
+				7198639A2C3C7D1A0081BEED /* Localizable.strings in Resources */,
 				7198634D2C3C479F0081BEED /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,9 +362,15 @@
 				719863782C3C49030081BEED /* I18n.swift in Sources */,
 				7198634B2C3C47920081BEED /* ContentView.swift in Sources */,
 				7198637E2C3C49710081BEED /* HomeView.swift in Sources */,
+				719863902C3C789E0081BEED /* CoreApi.swift in Sources */,
+				719863922C3C78FD0081BEED /* CoreApiProtocol.swift in Sources */,
 				719863852C3C4C210081BEED /* AppDelegate.swift in Sources */,
 				7198637C2C3C49410081BEED /* HomeViewModel.swift in Sources */,
 				719863492C3C47920081BEED /* MyWalletApp.swift in Sources */,
+				7198638B2C3C74B70081BEED /* MyWalletBaseURL.swift in Sources */,
+				7198638D2C3C78310081BEED /* QuotesRepository.swift in Sources */,
+				719863962C3C7A860081BEED /* MWLogger.swift in Sources */,
+				719863942C3C794D0081BEED /* StringExtension.swift in Sources */,
 				719863872C3C4C2F0081BEED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,6 +404,17 @@
 			targetProxy = 719863612C3C479F0081BEED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		719863982C3C7D1A0081BEED /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				719863992C3C7D1A0081BEED /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		719863682C3C479F0081BEED /* Debug */ = {
