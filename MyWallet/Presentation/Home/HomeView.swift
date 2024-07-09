@@ -15,7 +15,16 @@ struct HomeView: View {
     }
     
     var body: some View {
-        Text("Bem-vindo!")
+        Text("Olá, Vitor!")
+            .font(.mwTitle)
+        
+        VStack {
+            Text("Saldo total")
+                .font(.mwBody)
+            Text("Saldo em uso")
+                .font(.mwFootnote)
+                
+        }
     }
 }
 

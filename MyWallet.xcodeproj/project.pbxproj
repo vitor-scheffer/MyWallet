@@ -28,6 +28,12 @@
 		719863AA2C3CD3120081BEED /* QuotesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719863A92C3CD3120081BEED /* QuotesUseCase.swift */; };
 		719863AD2C3CD3840081BEED /* QuotesUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719863AC2C3CD3840081BEED /* QuotesUseCaseProtocol.swift */; };
 		719863B22C3D96D80081BEED /* MyWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719863B12C3D96D80081BEED /* MyWalletApp.swift */; };
+		719863BC2C3DE3F60081BEED /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 719863B72C3DE3F60081BEED /* Poppins-Medium.ttf */; };
+		719863BD2C3DE3F60081BEED /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 719863B82C3DE3F60081BEED /* Poppins-Bold.ttf */; };
+		719863BE2C3DE3F60081BEED /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 719863B92C3DE3F60081BEED /* Poppins-Regular.ttf */; };
+		719863BF2C3DE3F60081BEED /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 719863BA2C3DE3F60081BEED /* Poppins-SemiBold.ttf */; };
+		719863C02C3DE3F60081BEED /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 719863BB2C3DE3F60081BEED /* Poppins-Light.ttf */; };
+		719863C32C3DE8AF0081BEED /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719863C22C3DE8AF0081BEED /* FontExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +71,13 @@
 		719863A92C3CD3120081BEED /* QuotesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesUseCase.swift; sourceTree = "<group>"; };
 		719863AC2C3CD3840081BEED /* QuotesUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuotesUseCaseProtocol.swift; path = MyWallet/Domain/UseCase/Protocols/QuotesUseCaseProtocol.swift; sourceTree = SOURCE_ROOT; };
 		719863B12C3D96D80081BEED /* MyWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWalletApp.swift; sourceTree = "<group>"; };
+		719863B72C3DE3F60081BEED /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Medium.ttf"; path = "../../../../../../Downloads/Poppins/Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		719863B82C3DE3F60081BEED /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Bold.ttf"; path = "../../../../../../Downloads/Poppins/Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		719863B92C3DE3F60081BEED /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Regular.ttf"; path = "../../../../../../Downloads/Poppins/Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		719863BA2C3DE3F60081BEED /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-SemiBold.ttf"; path = "../../../../../../Downloads/Poppins/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		719863BB2C3DE3F60081BEED /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Light.ttf"; path = "../../../../../../Downloads/Poppins/Poppins-Light.ttf"; sourceTree = "<group>"; };
+		719863C12C3DE5D20081BEED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		719863C22C3DE8AF0081BEED /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +119,7 @@
 		719863472C3C47920081BEED /* MyWallet */ = {
 			isa = PBXGroup;
 			children = (
+				719863C12C3DE5D20081BEED /* Info.plist */,
 				7198637F2C3C4A690081BEED /* Data */,
 				719863A62C3CD2080081BEED /* Domain */,
 				719863792C3C492A0081BEED /* Presentation */,
@@ -138,6 +152,7 @@
 			children = (
 				719863742C3C48CC0081BEED /* BindingExtension.swift */,
 				719863932C3C794D0081BEED /* StringExtension.swift */,
+				719863C22C3DE8AF0081BEED /* FontExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -191,6 +206,7 @@
 		719863972C3C7D000081BEED /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				719863B62C3DE3D00081BEED /* Fonts */,
 				7198634F2C3C479F0081BEED /* Preview Content */,
 				7198634C2C3C479F0081BEED /* Assets.xcassets */,
 				719863982C3C7D1A0081BEED /* Localizable.strings */,
@@ -257,6 +273,18 @@
 				719863AC2C3CD3840081BEED /* QuotesUseCaseProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		719863B62C3DE3D00081BEED /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				719863B82C3DE3F60081BEED /* Poppins-Bold.ttf */,
+				719863BB2C3DE3F60081BEED /* Poppins-Light.ttf */,
+				719863B72C3DE3F60081BEED /* Poppins-Medium.ttf */,
+				719863B92C3DE3F60081BEED /* Poppins-Regular.ttf */,
+				719863BA2C3DE3F60081BEED /* Poppins-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +369,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				719863512C3C479F0081BEED /* Preview Assets.xcassets in Resources */,
+				719863BF2C3DE3F60081BEED /* Poppins-SemiBold.ttf in Resources */,
+				719863BC2C3DE3F60081BEED /* Poppins-Medium.ttf in Resources */,
+				719863C02C3DE3F60081BEED /* Poppins-Light.ttf in Resources */,
+				719863BD2C3DE3F60081BEED /* Poppins-Bold.ttf in Resources */,
+				719863BE2C3DE3F60081BEED /* Poppins-Regular.ttf in Resources */,
 				7198639A2C3C7D1A0081BEED /* Localizable.strings in Resources */,
 				7198634D2C3C479F0081BEED /* Assets.xcassets in Resources */,
 			);
@@ -366,6 +399,7 @@
 				7198637E2C3C49710081BEED /* HomeView.swift in Sources */,
 				719863902C3C789E0081BEED /* CoreApi.swift in Sources */,
 				719863AD2C3CD3840081BEED /* QuotesUseCaseProtocol.swift in Sources */,
+				719863C32C3DE8AF0081BEED /* FontExtension.swift in Sources */,
 				719863922C3C78FD0081BEED /* CoreApiProtocol.swift in Sources */,
 				719863B22C3D96D80081BEED /* MyWalletApp.swift in Sources */,
 				7198637C2C3C49410081BEED /* HomeViewModel.swift in Sources */,
@@ -535,6 +569,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MyWallet/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyWallet/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -571,6 +606,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MyWallet/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyWallet/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
