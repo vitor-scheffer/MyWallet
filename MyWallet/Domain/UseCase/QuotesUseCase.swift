@@ -14,7 +14,7 @@ final public class QuotesUseCase: QuotesUseCaseProtocol {
         self.repo = repository
     }
     
-    public func execute(completion: @escaping (CompletionStatus<QuoteListResponse>) -> Void) {
+    func execute(completion: @escaping (CompletionStatus<QuoteListResponse>) -> Void) {
         repo?.getQuoteList(completion: completion)
     }
 }

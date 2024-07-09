@@ -15,7 +15,16 @@ struct HomeView: View {
     }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Olá, Vitor!")
+            .font(.mwTitle)
+        
+        VStack {
+            Text("Saldo total")
+                .font(.mwBody)
+            Text("Saldo em uso")
+                .font(.mwFootnote)
+                
+        }
     }
 }
 
