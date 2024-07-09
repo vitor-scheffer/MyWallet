@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol QuotesUseCaseProtocol {
+protocol QuotesUseCaseProtocol {
     func execute(
         completion: @escaping (CompletionStatus<QuoteListResponse>) -> Void
     )

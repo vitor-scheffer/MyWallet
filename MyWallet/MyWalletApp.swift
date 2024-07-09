@@ -11,7 +11,13 @@ import SwiftUI
 struct MyWalletApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView(model: .init(
+                quotesUseCase: QuotesUseCase(
+                    repository: QuoteListRepository(
+                        apiService: CoreApi()
+                    )
+                )
+            ))
         }
     }
 }
