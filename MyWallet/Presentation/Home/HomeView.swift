@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct HomeView: View {
+    @ObservedObject private var model: HomeViewModel
+    
+    init(model: HomeViewModel) {
+        self.model = model
+    }
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
+#if DEBUG
 #Preview {
-    HomeView()
+    HomeView(model: HomeViewModel(
+        quotesUseCase: QuotesUseCase(
+            repository: QuoteListRepository(
+                apiService: CoreApi()
+            )
+        )
+    ))
 }
+#endif
