@@ -15,15 +15,28 @@ struct HomeView: View {
     }
     
     var body: some View {
-        Text("Olá, Vitor!")
-            .font(.mwTitle)
-        
-        VStack {
-            Text("Saldo total")
-                .font(.mwBody)
-            Text("Saldo em uso")
-                .font(.mwFootnote)
+        NavigationView {
+            VStack {
+                HStack {
+                    Text("Olá, Vitor!")
+                        .font(.mwTitle)
+                        .padding()
+                        
+                }
+                .background(Color.MWbody)
+                .cornerRadius(8)
                 
+                Spacer()
+                
+                VStack {
+                    Text("Saldo total")
+                        .font(.mwBody)
+                    Text("Saldo em uso")
+                        .font(.mwFootnote)
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            }
+            .background(.white)
         }
     }
 }

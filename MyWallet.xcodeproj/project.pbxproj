@@ -34,6 +34,7 @@
 		719863BF2C3DE3F60081BEED /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 719863BA2C3DE3F60081BEED /* Poppins-SemiBold.ttf */; };
 		719863C02C3DE3F60081BEED /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 719863BB2C3DE3F60081BEED /* Poppins-Light.ttf */; };
 		719863C32C3DE8AF0081BEED /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719863C22C3DE8AF0081BEED /* FontExtension.swift */; };
+		719863C52C3E37430081BEED /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719863C42C3E37430081BEED /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		719863BB2C3DE3F60081BEED /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Light.ttf"; path = "../../../../../../Downloads/Poppins/Poppins-Light.ttf"; sourceTree = "<group>"; };
 		719863C12C3DE5D20081BEED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		719863C22C3DE8AF0081BEED /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		719863C42C3E37430081BEED /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				719863742C3C48CC0081BEED /* BindingExtension.swift */,
 				719863932C3C794D0081BEED /* StringExtension.swift */,
 				719863C22C3DE8AF0081BEED /* FontExtension.swift */,
+				719863C42C3E37430081BEED /* ColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				719863962C3C7A860081BEED /* MWLogger.swift in Sources */,
 				719863942C3C794D0081BEED /* StringExtension.swift in Sources */,
 				719863AA2C3CD3120081BEED /* QuotesUseCase.swift in Sources */,
+				719863C52C3E37430081BEED /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
